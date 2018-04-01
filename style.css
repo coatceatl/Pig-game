@@ -1,0 +1,14 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+.wrapper {
+  width: 100ps;
+  background-color: #fff;
+}
+
+.button {
+  background-color: #555;
+  border: 2px solid black;
+  font-size: 20px;
+}
