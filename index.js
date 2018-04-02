@@ -16,13 +16,11 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
   diceDisplay.src = 'img/dice-' + dice + '.png';
 
   if (dice !== 1) {
-    roundScore = dice;
-    console.log(roundScore);
+    roundScore += dice;
     document.getElementById('current-' + activePlayer).textContent = roundScore;
   } else {
-    console.log(dice);
+    roundScore = 0;
+    document.getElementById('current-' + activePlayer).textContent = roundScore;
   }
 });
-
-//document.getElementById('current-0').textContent = dice;
 
