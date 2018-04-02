@@ -27,8 +27,11 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
   scores[activePlayer] += roundScore;
   document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
-  if (scores[activePlayer] >= 100) {
-    alert('You win ' + activePlayer);
+  if (scores[activePlayer] >= 20) {
+    document.getElementById('name-' + activePlayer).textContent = 'Winner!!!';
+    document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
+    document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
   } else {
     nextPlayer();
   }

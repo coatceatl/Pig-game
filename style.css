@@ -16,7 +16,8 @@ h1 {
   color: #e81717;
   text-align: center;
   font-size: 60px;
-  margin-top: 6%;
+  margin-top: 3%;
+  position: inherit;
 }
 .wrapper {
   width: 1000px;
@@ -55,6 +56,14 @@ h1 {
 }
 .active .player-name {
   font-weight: 900;
+}
+.active .player-name::after {
+  content: "\2022";
+  font-size: 47px;
+  position: absolute;
+  color: #eb4d4d;
+  top: -7px;
+  right: 10px;
 }
 .player-current-box {
   background-color: #eb4d4d;
@@ -122,3 +131,11 @@ button {
   vertical-align: text-top;
   margin-top: -4px;
 }
+.winner .player-name {
+  font-weight: 900;
+  color: #eb4d4d;
+}
+.winner {
+  background-color: #d4d2d2;
+}
+
