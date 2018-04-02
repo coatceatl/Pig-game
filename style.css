@@ -13,7 +13,7 @@ body {
   position: relative;
 }
 h1 {
-  color: red;
+  color: #e81717;
   text-align: center;
 }
 .wrapper {
@@ -54,12 +54,31 @@ h1 {
 .active .player-name {
   font-weight: 300;
 }
+.player-current-box {
+  background-color: #ED4D4D;
+  color: #fff;
+  width: 40%;
+  margin: 0 auto;
+  padding: 12px;
+  text-align: center;
+}
+.player-current-label {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #222;
+}
+.player-current-score {
+  font-size: 30px;
+}
 button {
-  background-color: none;
+  left: 50%;
   border: none;
   font-size: 20px;
   font-transform: uppercase;
   cursor: pointer;
+  font-weight: 300;
+  width: 200px;
   color: #555;
 }
 .btn-new {
