@@ -21,6 +21,14 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
   } else {
     roundScore = 0;
     document.getElementById('current-' + activePlayer).textContent = roundScore;
+
+    if(activePlayer === 0) {
+      activePlayer = 1;
+    } else {
+      activePlayer = 0;
+    }
+    document.querySelector('.player-0-panel').classList.toggle('active');
+    document.querySelector('.player-1-panel').classList.toggle('active');
   }
 });
 
