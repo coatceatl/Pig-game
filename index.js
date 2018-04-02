@@ -34,3 +34,21 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
   }
 });
 
+document.querySelector('.btn-hold').addEventListener('click', function() {
+  scores[activePlayer] += roundScore;
+  document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
+
+  if(activePlayer === 0) {
+      activePlayer = 1;
+    } else {
+      activePlayer = 0;
+    }
+    roundScore = 0;
+
+    document.querySelector('.player-0-panel').classList.toggle('active');
+    document.querySelector('.player-1-panel').classList.toggle('active');
+
+    document.querySelector('.dice').style.display = 'none';
+
+});
+
