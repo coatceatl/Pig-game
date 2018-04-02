@@ -27,7 +27,11 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
   scores[activePlayer] += roundScore;
   document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
-  nextPlayer();
+  if (scores[activePlayer] >= 100) {
+    alert('You win ' + activePlayer);
+  } else {
+    nextPlayer();
+  }
 });
 
 function nextPlayer() {
