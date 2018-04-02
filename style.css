@@ -46,18 +46,18 @@ h1 {
 .player-score {
   text-align: center;
   font-size: 80px;
-  color: #EB4D4D;
+  color: #eb4d4d;
   font-weight: 100;
   margin-bottom: 130px;
 }
 .active {
-  background-color: #f7f7f7;
+  background-color: #d4d2d2;
 }
 .active .player-name {
-  font-weight: 300;
+  font-weight: 900;
 }
 .player-current-box {
-  background-color: #ED4D4D;
+  background-color: #eb4d4d;
   color: #fff;
   width: 40%;
   margin: 0 auto;
@@ -75,22 +75,25 @@ h1 {
 }
 button {
   left: 50%;
-  border: none;
   font-size: 20px;
   font-transform: uppercase;
   cursor: pointer;
   font-weight: 300;
   width: 200px;
   color: #555;
-}
+  position: absolute;
+  transform: translateX(-50%);
+  background-color: aliceblue;
+  height: 60px;
+  }
 .btn-new {
-  top: 45px;
+  top: 25px;
 }
 .btn-roll {
-  top: 45px;
+  top: 420px;
 }
 .btn-hold {
-  top: 45px;
+  top: 500px;
 }
 .final-score {
   position: absolute;
@@ -107,8 +110,15 @@ button {
 .dice {
   position: absolute;
   left: 50%;
-  top: 178px;
+  top: 210px;
   transform: translateX(-50%);
   height: 100px;
+  border: 2px solid black;
 }
-
+.svg-inline--fa {
+  color: #eb4d4d;
+  display: inline-block;
+  font-size: 32px;
+  vertical-align: text-top;
+  margin-top: -4px;
+}
